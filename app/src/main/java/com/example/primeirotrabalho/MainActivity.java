@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AnimalsFragment animalsFragment;
     private NumbersFragment numbersFragment;
+    private HomeFragment homeFragment;
     private Spinner menuSpinner;
 
     String[] menuOptions = {"Home", "Animais", "Números"};
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         menuSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) {
+                    homeFragment = new HomeFragment();
+                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    transaction.replace(R.id.frameContent, homeFragment);
+                    transaction.commit();
+                }
                 if (i == 1) {
                     animalsFragment = new AnimalsFragment();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
