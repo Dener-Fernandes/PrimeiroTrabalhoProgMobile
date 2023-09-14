@@ -18,7 +18,10 @@
     <FrameLayout
         android:id="@+id/frameContent"
         android:layout_width="409dp"
-        android:layout_height="694dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorForBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerMenu">
