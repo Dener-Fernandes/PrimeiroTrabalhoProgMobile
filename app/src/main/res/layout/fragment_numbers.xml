@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NumbersFragment">
+    tools:context=".NumbersFragment"
+    android:background="@drawable/segundo_fundo"
+    >
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/segundo_fundo"
+        android:layout_marginTop="140dp"
         android:columnCount="2"
         android:rowCount="3">
 
@@ -73,5 +75,14 @@
             android:scaleType="centerCrop"
             android:src="@drawable/seis" />
     </GridLayout>
+
+    <TextView
+        android:id="@+id/numbersTextId"
+        android:layout_width="323dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/NumbersText"
+        android:textSize="35sp" />
 
 </FrameLayout>

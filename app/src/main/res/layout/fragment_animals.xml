@@ -25,7 +25,7 @@
         android:rowCount="2">
         >
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:scaleType="center"
             android:src="@drawable/gato" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             android:scaleType="center"
             android:src="@drawable/cao" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:scaleType="center"
             android:src="@drawable/leao" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             android:background="@android:color/transparent"
             android:src="@drawable/macaco" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             android:background="@android:color/transparent"
             android:src="@drawable/vaca" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton13"
             android:layout_width="wrap_content"
             android:layout_height="131dp"
@@ -86,12 +86,12 @@
     </GridLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/animalsTextId"
         android:layout_width="323dp"
-        android:layout_height="142dp"
-        android:layout_marginStart="120dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
-        android:text="Animais"
-        android:textSize="50sp" />
+        android:text="@string/AnimalsText"
+        android:textSize="35sp" />
 
 </FrameLayout>
